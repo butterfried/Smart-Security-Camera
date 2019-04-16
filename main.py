@@ -87,7 +87,7 @@ def check_for_objects():
                 frame, found_obj = video_camera.get_object(object_classifier)
                 if found_obj and (time.time() - last_epoch) > email_update_interval:
                     last_epoch = time.time()
-                    notifyFile('/home/pi/Smart-Security-Camera-master/b.jpg')
+                    notifyFile('/home/pi/Smart-Security-Camera/b.jpg')
                     print "notify"
             except:
                 print "Error : ", sys.exc_info()[0]
