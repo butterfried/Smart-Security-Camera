@@ -2,5 +2,6 @@ imutils
 flask
 picamera[array]
 Flask-BasicAuth==0.2.0
-blynklib
 requests
+blynk-library-python
+RPi.GPIO
