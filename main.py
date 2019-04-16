@@ -10,7 +10,7 @@ import threading
 import BlynkLib
 import RPi.GPIO as GPIO
 
-file = {'imageFile':open('/home/pi/Smart-Security-Camera-master/a.jpg','rb')}
+file = {'imageFile':open('/home/pi/Smart-Security-Camera/a.jpg','rb')}
 url = 'https://notify-api.line.me/api/notify'
 token = 'HeoPBL7qDjtiKRaVjJlnrWHZypQ5Uj3gN1buyig4qFN'
 msg = 'Found someone in your house!!'
