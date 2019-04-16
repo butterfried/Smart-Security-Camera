@@ -21,12 +21,14 @@ class VideoCamera(object):
     def get_frame(self):
         frame = self.flip_if_needed(self.vs.read())
         ret, jpeg = cv2.imencode('.jpg', frame)
+        #cv2.imwrite('b.jpg',self.flip_if_needed(self.vs.read()))
         return jpeg.tobytes()
 
     def get_object(self, classifier):
         found_objects = False
         frame = self.flip_if_needed(self.vs.read()).copy() 
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        cv2.imwrite('b.jpg',self.flip_if_needed(self.vs.read()))
 
         objects = classifier.detectMultiScale(
             gray,
